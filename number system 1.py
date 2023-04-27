@@ -1,7 +1,7 @@
-x = 74
+x = 10
 s = '' 
 while x != 0:
-    s += str(x % 4 )
-    x //= 4
+    s += str(x % 2 )
+    x //= 2
 s = s[::-1]
 print(s)
