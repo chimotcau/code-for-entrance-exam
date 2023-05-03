@@ -4,7 +4,7 @@ for x in k:
   for y in k:
     for w in k:
       for z in k:
-         if not  ((x and (not y)) or (y == z) or (not w)):
+         if ((x and y) or (y and z)) == ((x <= w) and (w <= z)):
          
-          print(x, y, z, w) 
+          print(x, y, w, z) 
           #answer: xwzy

@@ -1,10 +1,10 @@
-
-count = 0
-m = -20001
+count = answer = 0
 f = open('17.txt')
-l = [int(i) for i in f]
-for j in range(len(l) - 1):
-    if (l[j] % 3 == 0) or (l[j + 1] % 3 == 0):
-        count += 1
-        m = max(m, l[j]+ l[j + 1])
-print(count, m)
+a = [int(i) for i in f]
+for j in range(len(a)-1):
+    for k in range(j+1,len(a)):
+        if ((a[j]-a[k])%60 ==0):
+            count += 1
+            answer = max(answer, a[j]-a[k])
+print (count,answer)
+#answer: 832722 9960        
