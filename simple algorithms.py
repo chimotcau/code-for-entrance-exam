@@ -7,7 +7,7 @@ def F( x,y,h):
 for s in range(1,68):
     if F(16,s,1) == True:
         print(s)
-        break                
+        break               
 
             
 
