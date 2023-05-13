@@ -1,5 +1,9 @@
 import math 
 b=0
+def f(n):
+    if int(math.sqrt(n))**2==n:
+        return True 
+    return False    
 for i in range(2,1000):
     a=[]
     for j in range(2,int(math.sqrt(i))+1):
