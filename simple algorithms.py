@@ -1,5 +1,5 @@
 def F( x,y,h):
-    if x +y >= 84 and h == 3:
+    if x +y >= 20 and h == 3:
         return True
     if x + y <84 and h ==3:
         return False
